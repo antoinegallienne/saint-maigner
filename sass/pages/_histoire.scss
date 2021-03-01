@@ -1,16 +1,21 @@
-.stmaigner{
+.histoire{
 	width: 100%;
 	margin: auto;
 }
 
-.page-stmaigner{
-	background: no-repeat url('../../public/img/saint-maigner.webp');
+.page-histoire {
+	background: no-repeat url('../../public/img/histoire.webp');
 	/*
 	background-size: 300px;
 	*/
 	width: 586px;
 	height: 575px;
 	margin: auto;
+}
+
+.texte-histoire{
+	color: blue;
+	border: solid 2rem green;
 }
 
 /*  -----------------  pour les écrans moyens de 768px tablette  -------------*/
@@ -20,17 +25,17 @@ body {
 
 	@include media-min(768px) {
 
-		.page-stmaigner {
+		.page-histoire {
 			width: 586px;
 			height: 575px;
 		}
 	}
 	@include media-min(1024px) {
-		.page-stmaigner {
+		.page-histoire {
 			width: 586px;
 			height: 575px;
 
 		}
-	}
 
+	}
 }
