@@ -1,0 +1,12 @@
+{
+  "name": "saint-maigner",
+  "version": "1.0.0",
+  "description": "Saint-Maigner ",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/style/style.css"
+  },
+
+  "author": "Antoine Gallienne",
+  "license": "MIT"
+}
