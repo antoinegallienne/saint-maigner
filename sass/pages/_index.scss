@@ -4,6 +4,10 @@
 }
 
 .page-stmaigner{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background: no-repeat url('../../public/img/saint-maigner.webp');
 	/*
 	background-size: 300px;
@@ -12,6 +16,16 @@
 	height: 575px;
 	margin: auto;
 }
+
+.ahistoire img,
+.apresentation img{
+	width: 8rem;
+	align-self: center;
+	justify-self: center;
+}
+
+
+
 
 /*  -----------------  pour les écrans moyens de 768px tablette  -------------*/
 /* -------------------------------------------------------------------------------*/
