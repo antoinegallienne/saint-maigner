@@ -5,15 +5,33 @@
 }
 
 .page-histoire {
-	background: no-repeat url('../../public/img/histoire.webp');
+	display: flex;
+	flex-direction: column;
+	background:  url('../../public/img/histoire2.webp');
 	width: 586px;
 	height: auto;
+	margin: auto;
+	border: solid 1.5rem $histoire;
+}
+h1{
+	font-family: 'KaushanScript-Regular';
+	text-align: center;
+}
+
+.acarte1930 img{
+	width: 400px;
+}
+figure{
 	margin: auto;
 }
 
 .texte-histoire{
+	font-family: 'KaushanScript-Regular';
+	font-size: 1.3rem;
+	/*
+	font-weight: bold;
+*/
 	color: black;
-	border: solid 2rem $histoire;
 	padding: 5vh 5vw 5vh 5vw;
 }
 
@@ -25,13 +43,13 @@ body {
 	@include media-min(768px) {
 
 		.page-histoire {
-			width: 586px;
+			width: 700px;
 			height: auto;
 		}
 	}
 	@include media-min(1024px) {
 		.page-histoire {
-			width: 586px;
+			width: 1000px;
 			height: auto;
 
 		}

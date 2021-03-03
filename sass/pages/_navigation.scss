@@ -1,0 +1,64 @@
+.navigation{
+	width: 100%;
+	margin: auto;
+	background: no-repeat url('../../public/img/aeriennb.webp');
+}
+
+.page-navigation{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: no-repeat url('../../public/img/stmaigner2.webp');
+	background-size:550px;
+	background-position: center;
+	width: 586px;
+	height: 100vh;
+	margin: auto;
+}
+
+.apresentation img,
+.ahistoire img{
+	width: 10rem;
+	align-self: center;
+	justify-self: center;
+	padding: 1vh 1vw 1vh 1vw;
+}
+
+.apresentation:hover,
+.ahistoire:hover{
+	transform: scale(1.3);
+	transition-duration: 600ms;
+}
+
+.fig-navigation{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*  -----------------  pour les écrans moyens de 768px tablette  -------------*/
+/* -------------------------------------------------------------------------------*/
+
+body {
+
+	@include media-min(768px) {
+
+		.page-navigation {
+			width: 586px;
+			height: 700px;
+
+		}
+	}
+	@include media-min(1024px) {
+		.page-navigation {
+			width: 586px;
+			height: 700px;
+
+
+		}
+	}
+
+}

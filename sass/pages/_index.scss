@@ -5,23 +5,22 @@
 
 .page-stmaigner{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
-	align-items: center;
-	background: no-repeat url('../../public/img/saint-maigner.webp');
+	align-items: start;
+	background: no-repeat url('../../public/img/aeriennb.webp');
 	/*
 	background-size: 300px;
 	*/
 	width: 586px;
-	height: 575px;
+	height: 100vh;
 	margin: auto;
 }
 
-.ahistoire img,
-.apresentation img{
-	width: 8rem;
-	align-self: center;
-	justify-self: center;
+.polaroid img {
+	width: 25rem;
+	/*align-self: center;
+	justify-self: center;*/
 }
 
 
@@ -36,13 +35,15 @@ body {
 
 		.page-stmaigner {
 			width: 586px;
-			height: 575px;
+			height: 700px;
+
 		}
 	}
 	@include media-min(1024px) {
 		.page-stmaigner {
 			width: 586px;
-			height: 575px;
+			height: 700px;
+
 
 		}
 	}

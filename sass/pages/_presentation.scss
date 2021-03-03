@@ -9,11 +9,13 @@
 	width: 586px;
 	height: auto;
 	margin: auto;
+	border: solid 1.5rem $presentation;
 }
 
 .texte-presentation{
+	font-family: 'KaushanScript-Regular';
+	font-size: 1.3rem;
 	color: black;
-	border: solid 2rem $presentation;
 	padding: 5vh 5vw 5vh 5vw;
 }
 
