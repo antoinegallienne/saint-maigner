@@ -12,6 +12,11 @@
 	border: solid 1.5rem $presentation;
 }
 
+.titrepresentation{
+	font-family: 'KaushanScript-Regular';
+	text-align: center;
+	margin: auto;
+}
 .texte-presentation{
 	font-family: 'KaushanScript-Regular';
 	font-size: 1.3rem;
@@ -27,13 +32,13 @@ body {
 	@include media-min(768px) {
 
 		.page-presentation {
-			width: 586px;
+			width: 700px;
 			height: auto;
 		}
 	}
 	@include media-min(1024px) {
 		.page-presentationpage {
-			width: 586px;
+			width: 1000px;
 			height: auto;
 
 		}

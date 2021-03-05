@@ -1,58 +1,43 @@
 
-.stmaigner{
+.polamaigner{
 	width: 100%;
 	margin: auto;
 }
 
-.page-stmaigner{
+.page-polamaigner{
 	display:grid;
 	grid-template-rows:    1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas: 	"a2 a2 a2"
-							"b1 . b3"
-							"c1 . c3";
+							". . . "
+							". c2 .";
 	margin: auto;
 	width: 586px;
 	height: 100vh;
 	padding: 0 5vw 5vh 5vw;
 	background: no-repeat url('../../public/img/aeriennb.webp');
+
 }
 
-.titreindex{
+.polaroid{
 	grid-area: a2;
-	align-self: center;
 	justify-self: center;
-	font-size: 3rem;
-}
-
-.dep61{
-	grid-area: b1;
-	align-self: center;
-	justify-self: center;
-	font-size: 3rem;
 	margin: 0;
 }
 
-.dep63{
-	grid-area: b3;
-	align-self: center;
-	justify-self: center;
-	font-size: 3rem;
-	margin: 0;
-}
-.orne{
-	grid-area: c1;
-	font-size: 1.3rem;
+.polaremaigner {
+	grid-area: c2;
 	align-self: center;
 	justify-self: center;
 }
 
-.pdd {
-	grid-area: c3;
-	font-size: 1.3rem;
-	align-self: center;
-	justify-self: center;
+.polaremaigner img{
+	width: 15rem;
+	margin: auto;
 }
+
+
+
 
 
 /*  -----------------  pour les écrans moyens de 768px tablette  -------------*/
@@ -62,14 +47,14 @@ body {
 
 	@include media-min(768px) {
 
-		.page-stmaigner {
+		.page-polamaigner {
 			width: 600px;
 			height: 700px;
-
 		}
 	}
+
 	@include media-min(1024px) {
-		.page-stmaigner {
+		.page-polamaigner {
 			width: 800px;
 			height: 700px;
 
