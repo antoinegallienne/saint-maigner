@@ -6,68 +6,160 @@
   font-style: normal;
 }
 .stmaigner {
-  width: 100%;
+  width: 100vw;
   margin: auto;
 }
 
 .page-stmaigner {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "a2 a2 a2" "b1 . b3" "c1 . c3";
+  grid-template-rows: 1fr 1fr 0.1fr 0.5fr;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-template-areas: "a1 a1 a1 a1 a1" " .  . a2  .  ." " .  b1 .  b3 ." " .  c1 .  c3 .";
   margin: auto;
   width: 586px;
   height: 100vh;
   padding: 0 5vw 5vh 5vw;
-  background: no-repeat url("../../public/img/aeriennb.webp");
 }
 
 .titreindex {
+  grid-area: a1;
+  align-self: end;
+  justify-self: center;
+  font-size: 3rem;
+  white-space: pre-line;
+}
+
+.ou {
   grid-area: a2;
   align-self: center;
   justify-self: center;
+  color: black;
+  text-decoration: none;
   font-size: 3rem;
+  margin: 0;
 }
 
 .dep61 {
   grid-area: b1;
-  align-self: center;
+  align-self: end;
   justify-self: center;
-  font-size: 3rem;
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
   margin: 0;
 }
 
 .dep63 {
   grid-area: b3;
-  align-self: center;
+  align-self: end;
   justify-self: center;
-  font-size: 3rem;
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
   margin: 0;
 }
 
 .orne {
   grid-area: c1;
   font-size: 1.3rem;
-  align-self: center;
+  align-self: start;
   justify-self: center;
+  white-space: pre-line;
 }
 
 .pdd {
   grid-area: c3;
   font-size: 1.3rem;
-  align-self: center;
+  align-self: start;
   justify-self: center;
+  white-space: pre-line;
 }
 
-/*  -----------------  pour les écrans moyens de 768px tablette  -------------*/
-/* -------------------------------------------------------------------------------*/
 @media screen and (min-width: 768px) {
   body .page-stmaigner {
     width: 600px;
     height: 700px;
   }
+  body .stmaigner {
+    width: 100vw;
+    margin: auto;
+  }
+  body .titreindex {
+    grid-area: a2;
+    align-self: center;
+    justify-self: center;
+    font-size: 3rem;
+  }
+  body .dep61 {
+    grid-area: b1;
+    align-self: end;
+    justify-self: center;
+    font-size: 3rem;
+    margin: 0;
+  }
+  body .dep63 {
+    grid-area: b3;
+    align-self: end;
+    justify-self: center;
+    font-size: 3rem;
+    margin: 0;
+  }
+  body .orne p {
+    grid-area: c1;
+    font-size: 1.3rem;
+    white-space: pre;
+    align-self: start;
+    justify-self: center;
+  }
+  body .pdd {
+    grid-area: c3;
+    font-size: 1.3rem;
+    white-space: pre;
+    align-self: start;
+    justify-self: center;
+  }
 }
 @media screen and (min-width: 1024px) {
+  body {
+    /*
+          .titreindex{
+            grid-area: a2;
+            align-self: center;
+            justify-self: center;
+            font-size: 3rem;
+          }
+
+          .dep61{
+            grid-area: b1;
+            align-self: end;
+            justify-self: center;
+            font-size: 3rem;
+            margin: 0;
+          }
+
+          .dep63{
+            grid-area: b3;
+            align-self: end;
+            justify-self: center;
+            font-size: 3rem;
+            margin: 0;
+          }
+
+          .orne{
+            grid-area: c1;
+            font-size: 1.3rem;
+            align-self: start;
+            justify-self: center;
+          }
+
+          .pdd {
+            grid-area: c3;
+            font-size: 1.3rem;
+            align-self: start;
+            justify-self: center;
+          }
+    */
+  }
   body .page-stmaigner {
     width: 800px;
     height: 700px;
@@ -249,7 +341,6 @@
 }
 
 .polamaigner {
-  width: 100%;
   margin: auto;
 }
 
@@ -257,28 +348,45 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "a2 a2 a2" ". . . " ". c2 .";
-  margin: auto;
-  width: 586px;
+  grid-template-areas: " pola pola pola " " panore .  pano " " . 	 . 	  .  ";
+  width: 70vw;
   height: 100vh;
   padding: 0 5vw 5vh 5vw;
   background: no-repeat url("../../public/img/aeriennb.webp");
+  margin: auto;
 }
 
 .polaroid {
-  grid-area: a2;
+  grid-area: pola;
+  align-self: center;
   justify-self: center;
   margin: 0;
 }
 
 .polaremaigner {
-  grid-area: c2;
+  grid-area: panore;
   align-self: center;
-  justify-self: center;
+  margin: auto;
+}
+
+.polamaigner {
+  grid-area: pano;
+  align-self: center;
+  margin: auto;
+}
+
+.polaroid img {
+  width: 50vw;
+  margin: auto;
 }
 
 .polaremaigner img {
-  width: 15rem;
+  width: 20vw;
+  margin: auto;
+}
+
+.polamaigner img {
+  width: 20vw;
   margin: auto;
 }
 
@@ -298,7 +406,7 @@
 }
 
 .polaceauce {
-  width: 100%;
+  width: 80vw;
   margin: auto;
 }
 
@@ -306,28 +414,34 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "a2 a2 a2" ". . . " ". c2 .";
-  margin: auto;
-  width: 586px;
+  grid-template-areas: " pola pola pola" " pano   .   . " "  .     .   . ";
+  width: 70vw;
   height: 100vh;
   padding: 0 5vw 5vh 5vw;
   background: no-repeat url("../../public/img/aeriennb.webp");
+  margin: auto;
 }
 
 .polaroid {
-  grid-area: a2;
+  grid-area: pola;
+  align-self: center;
   justify-self: center;
   margin: 0;
 }
 
 .polaretceauce {
-  grid-area: c2;
+  grid-area: pano;
   align-self: center;
-  justify-self: center;
+  margin: auto;
+}
+
+.polaroid img {
+  width: 50vw;
+  margin: auto;
 }
 
 .polaretceauce img {
-  width: 15rem;
+  width: 20vw;
   margin: auto;
 }
 
