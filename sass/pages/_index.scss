@@ -6,25 +6,26 @@
 
 .page-stmaigner{
 	display:grid;
-	grid-template-rows:    1fr 1fr 0.1fr 0.5fr;
+	grid-template-rows:    2fr 0.5fr 0.5fr 0.5fr;
 	grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-	grid-template-areas: 	"a1 a1 a1 a1 a1"
+	grid-template-areas: 	". a1 a1 a1 ."
                             " .  . a2  .  ."
-							" .  b1 .  b3 ."
-							" .  c1 .  c3 .";
+							" b1 b1  .  b3 b3"
+							" c1  c1 .  c3 c3";
 	margin: auto;
-	width: 586px;
-	height: 100vh;
-	padding: 0 5vw 5vh 5vw;
+	width: 90vw;
+	height: 80vh;
+
 	//background: no-repeat url('../../public/img/aeriennb.webp');
 }
 
 .titreindex{
-	grid-area: a1;
-	align-self: end;
-	justify-self: center;
-	font-size: 3rem;
-    white-space: pre-line;
+  grid-area: a1;
+  align-self: end;
+  justify-self: center;
+  font-size: 3rem;
+  white-space: pre-line;
+  padding-top: 10vh;
 }
 .ou{
   grid-area: a2;
@@ -36,39 +37,41 @@
   margin: 0;
 }
 .dep61{
-	grid-area: b1;
-	align-self: end;
-	justify-self: center;
-    color: black;
-    text-decoration: none;
-	font-size: 2rem;
-	margin: 0;
+  grid-area: b1;
+  align-self: end;
+  justify-self: center;
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .dep63{
-	grid-area: b3;
-	align-self: end;
-	justify-self: center;
-    color: black;
-    text-decoration: none;
-	font-size: 2rem;
-	margin: 0;
+  grid-area: b3;
+  align-self: end;
+  justify-self: center;
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .orne{
-	grid-area: c1;
-	font-size: 1.3rem;
-	align-self: start;
-	justify-self: center;
-    white-space: pre-line;
+  grid-area: c1;
+  font-size: 1.2rem;
+  align-self: start;
+  justify-self: center;
+  white-space: pre-line;
+  padding-bottom: 5vh;
 }
 
 .pdd {
-	grid-area: c3;
-	font-size: 1.3rem;
-	align-self: start;
-	justify-self: center;
-    white-space: pre-line;
+  grid-area: c3;
+  font-size: 1.2rem;
+  align-self: start;
+  justify-self: center;
+  white-space: pre-line;
+  padding-bottom: 5vh;
 }
 
 
@@ -78,16 +81,18 @@
 body {
 
 	@include media-min(768px) {
-
-      .page-stmaigner {
-			width: 600px;
-			height: 700px;
-      }
-
+/*
       .stmaigner{
         width: 100vw;
         margin: auto;
       }
+
+      .page-stmaigner {
+			width: 50vw;
+			height: 100vh;
+      }
+
+
       .titreindex{
         grid-area: a2;
         align-self: center;

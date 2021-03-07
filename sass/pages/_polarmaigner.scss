@@ -1,60 +1,68 @@
 
 .polamaigner{
-	//width: 80vw;
+	width: 97vw;
 	margin: auto;
 }
 
 .page-polamaigner{
 	display:grid;
-	grid-template-rows:    1fr 1fr 1fr;
+	grid-template-rows:    0.5fr 1fr ;
 	grid-template-columns: 1fr 1fr 1fr;
 
 	grid-template-areas: 	" pola pola pola "
-      						" panore .  pano "
-							" . 	 . 	  .  ";
-	width: 70vw;
-	height: 100vh;
-	padding: 0 5vw 5vh 5vw;
+							" nav nav nav";
+	width: 90vw;
+	height: 95vh;
+	// padding: 0 5vw 5vh 5vw;
 	background: no-repeat url('../../public/img/aeriennb.webp');
 	margin: auto;
 }
 
-.polaroid {
-	grid-area: pola;
-	align-self: center;
+.fig-navigation {
+	grid-area: nav;
 	justify-self: center;
 	margin: 0;
 }
 
-.polaremaigner {
-	grid-area: panore;
-	align-self: center;
-	margin: auto;
-}
 
-.polamaigner {
+.panmaigner {
 	grid-area: pano;
-	align-self: center;
+	justify-self: center;
+	align-self: start;
 	margin: auto;
 }
 
 //------------------------------------------
 
 .polaroid img{
-	width: 50vw;
+	width: 100vw;
+	margin: auto;
+}
+/*
+.page-navigation{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: no-repeat url('../../public/img/stmaigner3.webp');
+	background-size:300px;
+	background-position: center;
+	width: 90vw;
+	height: 50vh;
+	margin: auto;
+}*/
+
+/*
+.panremaigner img{
+	width: 25vw;
 	margin: auto;
 }
 
-.polaremaigner img{
-	width: 20vw;
+.panmaigner img{
+	width: 25vw;
 	margin: auto;
 }
-
-.polamaigner img{
-	width: 20vw;
-	margin: auto;
-}
-
+*/
 /*  -----------------  pour les écrans moyens de 768px tablette  -------------*/
 /* -------------------------------------------------------------------------------*/
 
@@ -63,16 +71,16 @@ body {
 	@include media-min(768px) {
 
 		.page-polamaigner {
-			width: 600px;
-			height: 700px;
+			width: 95vw;
+			height: 100vh;
 		}
 
 	}
 
 	@include media-min(1024px) {
 		.page-polamaigner {
-			width: 800px;
-			height: 700px;
+			width: 95vw;
+			height: 100vh;
 		}
 
 	}
