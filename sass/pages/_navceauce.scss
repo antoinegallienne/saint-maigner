@@ -6,7 +6,7 @@
 
 .page-polaceauce{
 	display:grid;
-	grid-template-rows:    1fr 1fr 1fr;
+	grid-template-rows:    1fr 0.1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
 
 	grid-template-areas: 	" pola pola pola"
@@ -15,34 +15,34 @@
 	width: 70vw;
 	height: 100vh;
 	padding: 0 5vw 5vh 5vw;
-	background: no-repeat url('../../public/img/aeriennb.webp');
+//	background: no-repeat url('../../public/img/aeriennb.webp');
 	margin: auto;
 }
 
 .polaroid {
 	grid-area: pola;
-	align-self: center;
+	align-self: start;
 	justify-self: center;
 	margin: 0;
 }
 
 .polaretceauce {
 	grid-area: pano;
-	align-self: center;
-	margin: auto;
+	align-self: start;
+	margin: 0;
 }
 
 //-----------------------------------------------
-/*
+
 .polaroid img{
-	width: 50vw;
+	width: 80vw;
 	margin: auto;
 }
 
 .polaretceauce img{
-	width: 20vw;
+	width: 30vw;
 	margin: auto;
-}*/
+}
 
 /*  -----------------  pour les écrans moyens de 768px tablette  -------------*/
 /* -------------------------------------------------------------------------------*/
