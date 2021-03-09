@@ -5,7 +5,7 @@
 	padding: 25vh 0 0 0 ;
 	background: no-repeat url('../../public/img/appolaroide.webp');
 	background-size:350px;
-	background-position:  50% 15%;;;
+	background-position:  50% 15%;
 }
 
 .page-navmaigner{
@@ -52,41 +52,31 @@
 .retourmaigner{
 	position: relative;
 	left:5vw;
-	top:120px;
+	top:15vh;
 }
 
-/*
-.apresentation{
-	transform: translateX(180px);
-}
-.ahistoire{
-	transform: translateX(180px);
-}
-.arandonnee{
-	transform: translateX(180px);
-}
-.retourmaigner{
-	transform: translateX(180px);
-}*/
 /*  -----------------  pour les écrans moyens de 768px tablette  -------------*/
 /* -------------------------------------------------------------------------------*/
 
 body {
 
-	@include media-min(768px) {
-/*
+	@include media-min(740px) {
+
 		.page-navmaigner {
-			width: 600px;
-			height: 700px;
-		}*/
+//			width: 700px;
+			height: 500px;
+			background-position:  50% 1%;
+//			border: solid 2px red;
+		}
 	}
 
 	@include media-min(1024px) {
-		/*
+
 		.page-navmaigner {
 			width: 800px;
 			height: 700px;
-		}*/
+//			border: solid 2px yellow;
+		}
 	}
 
 }

@@ -1,50 +1,45 @@
 
-.histoire{
+.presentation{
 	width: 100%;
 	margin: auto;
 }
 
-.page-histoire {
-	display: flex;
-	flex-direction: column;
-	background:  url('../../public/img/histoire2.webp');
+.page-presentation {
+	background: no-repeat url('../../public/img/presentation.webp');
 	width: 586px;
 	height: auto;
 	margin: auto;
-	border: solid 1.5rem $histoire;
+	border: solid 1.5rem $presentation;
 }
 
-/*
 .fa-reply {
 	font-size: 3rem;
 	padding: 5vh 0 0 10vw;
+	color: black;
+}
 
-}*/
-
-.titrehistoire{
+.titrepresentation{
 	font-family: 'KaushanScript-Regular';
 	text-align: center;
 	font-size: 2rem;
-	padding: 5vh 2vw 5vh 2vw;
 	margin: auto;
 }
-
-.acarte1930 img{
-	width: 400px;
-}
-
-.fig-histoire{
-	margin: auto;
-}
-
-.texte-histoire{
+.texte-presentation{
 	font-family: 'KaushanScript-Regular';
-	font-size: 1.3rem;
-	/*
-	font-weight: bold;
-*/
+	font-size: 1.6rem;
 	color: black;
 	padding: 5vh 5vw 5vh 5vw;
+}
+.refmairie{
+	font-family: 'KaushanScript-Regular';
+	font-size: 1rem;
+	color: black;
+	padding: 0 5vw 5vh 5vw;
+}
+.lienmaigner{
+	font-family: 'KaushanScript-Regular';
+	font-size: 1rem;
+	color: black;
 }
 
 /*  -----------------  pour les écrans moyens de 768px tablette  -------------
@@ -54,13 +49,13 @@ body {
 
 	@include media-min(768px) {
 
-		.page-histoire {
+		.page-presentation {
 			width: 700px;
 			height: auto;
 		}
 	}
 	@include media-min(1024px) {
-		.page-histoire {
+		.page-presentationpage {
 			width: 1000px;
 			height: auto;
 

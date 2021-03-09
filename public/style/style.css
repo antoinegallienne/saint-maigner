@@ -207,12 +207,12 @@
   border: solid 1.5rem #3e3831;
 }
 
-/*
 .fa-reply {
-	font-size: 3rem;
-	padding: 5vh 0 0 10vw;
+  font-size: 3rem;
+  padding: 5vh 0 0 10vw;
+  color: black;
+}
 
-}*/
 .titrehistoire {
   font-family: "KaushanScript-Regular";
   text-align: center;
@@ -237,6 +237,19 @@
   */
   color: black;
   padding: 5vh 5vw 5vh 5vw;
+}
+
+.refmairie {
+  font-family: "KaushanScript-Regular";
+  font-size: 1rem;
+  color: black;
+  padding: 0 5vw 5vh 5vw;
+}
+
+.lienmaigner {
+  font-family: "KaushanScript-Regular";
+  font-size: 1rem;
+  color: black;
 }
 
 /*  -----------------  pour les écrans moyens de 768px tablette  -------------
@@ -270,6 +283,7 @@
 .fa-reply {
   font-size: 3rem;
   padding: 5vh 0 0 10vw;
+  color: black;
 }
 
 .titrepresentation {
@@ -284,6 +298,19 @@
   font-size: 1.6rem;
   color: black;
   padding: 5vh 5vw 5vh 5vw;
+}
+
+.refmairie {
+  font-family: "KaushanScript-Regular";
+  font-size: 1rem;
+  color: black;
+  padding: 0 5vw 5vh 5vw;
+}
+
+.lienmaigner {
+  font-family: "KaushanScript-Regular";
+  font-size: 1rem;
+  color: black;
 }
 
 /*  -----------------  pour les écrans moyens de 768px tablette  -------------
@@ -353,93 +380,219 @@
 .retourmaigner {
   position: relative;
   left: 5vw;
-  top: 120px;
+  top: 15vh;
 }
 
-/*
-.apresentation{
-	transform: translateX(180px);
-}
-.ahistoire{
-	transform: translateX(180px);
-}
-.arandonnee{
-	transform: translateX(180px);
-}
-.retourmaigner{
-	transform: translateX(180px);
-}*/
 /*  -----------------  pour les écrans moyens de 768px tablette  -------------*/
 /* -------------------------------------------------------------------------------*/
-@media screen and (min-width: 768px) {
-  body {
-    /*
-    		.page-navmaigner {
-    			width: 600px;
-    			height: 700px;
-    		}*/
+@media screen and (min-width: 740px) {
+  body .page-navmaigner {
+    height: 500px;
+    background-position: 50% 1%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body {
-    /*
-    .page-navmaigner {
-    	width: 800px;
-    	height: 700px;
-    }*/
+  body .page-navmaigner {
+    width: 800px;
+    height: 700px;
   }
 }
 
-.polaceauce {
-  margin: auto;
-}
-
-.page-polaceauce {
-  display: grid;
-  grid-template-rows: 1fr 0.1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: " pola pola pola" " pano   .   . " "  .     .   . ";
-  width: 70vw;
+.navceauce {
+  width: auto;
   height: 100vh;
-  padding: 0 5vw 5vh 5vw;
+}
+
+.page-navceauce {
+  background: no-repeat url("../../public/img/polarceauce2.webp");
+  background-position: top;
+  width: 400vw;
+  height: 300vh;
   margin: auto;
 }
 
-.polaroid {
-  grid-area: pola;
-  align-self: start;
-  justify-self: center;
-  margin: 0;
+.fig-navceauce {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50vh 0 0 130vw;
+  height: 100vh;
+  margin: auto;
+}
+
+.apresentation img,
+.ahistoire img,
+.polaretceauce img {
+  width: 25rem;
+  padding: 0.5vh 0.5vw 0.5vh 0.5vw;
+}
+
+.apresentation,
+.ahistoire {
+  transform: rotate(-11deg);
+}
+
+.apresentation:hover,
+.ahistoire:hover,
+.polaretceauce:hover {
+  transform: scale(1.3);
+  transition-duration: 600ms;
 }
 
 .polaretceauce {
-  grid-area: pano;
-  align-self: start;
-  margin: 0;
-}
-
-.polaroid img {
-  width: 80vw;
-  margin: auto;
-}
-
-.polaretceauce img {
-  width: 30vw;
-  margin: auto;
+  position: relative;
+  left: 55vw;
+  top: 15vh;
 }
 
 /*  -----------------  pour les écrans moyens de 768px tablette  -------------*/
 /* -------------------------------------------------------------------------------*/
-@media screen and (min-width: 768px) {
-  body .page-polaceauce {
-    width: 600px;
-    height: 700px;
+@media screen and (min-width: 740px) {
+  body .page-navmaigner {
+    height: 500px;
+    background-position: 50% 1%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body .page-polaceauce {
+  body .page-navmaigner {
     width: 800px;
     height: 700px;
+  }
+}
+
+.histoire {
+  width: 100%;
+  margin: auto;
+}
+
+.page-histoire {
+  display: flex;
+  flex-direction: column;
+  background: url("../../public/img/histoire2.webp");
+  width: 586px;
+  height: auto;
+  margin: auto;
+  border: solid 1.5rem #3e3831;
+}
+
+.fa-reply {
+  font-size: 3rem;
+  padding: 5vh 0 0 10vw;
+  color: black;
+}
+
+.titrehistoire {
+  font-family: "KaushanScript-Regular";
+  text-align: center;
+  font-size: 2rem;
+  padding: 5vh 2vw 5vh 2vw;
+  margin: auto;
+}
+
+.acarte1930 img {
+  width: 400px;
+}
+
+.fig-histoire {
+  margin: auto;
+}
+
+.texte-histoire {
+  font-family: "KaushanScript-Regular";
+  font-size: 1.3rem;
+  /*
+  	font-weight: bold;
+  */
+  color: black;
+  padding: 5vh 5vw 5vh 5vw;
+}
+
+.refmairie {
+  font-family: "KaushanScript-Regular";
+  font-size: 1rem;
+  color: black;
+  padding: 0 5vw 5vh 5vw;
+}
+
+.lienmaigner {
+  font-family: "KaushanScript-Regular";
+  font-size: 1rem;
+  color: black;
+}
+
+/*  -----------------  pour les écrans moyens de 768px tablette  -------------
+ ----------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  body .page-histoire {
+    width: 700px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .page-histoire {
+    width: 1000px;
+    height: auto;
+  }
+}
+
+.presentation {
+  width: 100%;
+  margin: auto;
+}
+
+.page-presentation {
+  background: no-repeat url("../../public/img/presentation.webp");
+  width: 586px;
+  height: auto;
+  margin: auto;
+  border: solid 1.5rem #2f4b2e;
+}
+
+.fa-reply {
+  font-size: 3rem;
+  padding: 5vh 0 0 10vw;
+  color: black;
+}
+
+.titrepresentation {
+  font-family: "KaushanScript-Regular";
+  text-align: center;
+  font-size: 2rem;
+  margin: auto;
+}
+
+.texte-presentation {
+  font-family: "KaushanScript-Regular";
+  font-size: 1.6rem;
+  color: black;
+  padding: 5vh 5vw 5vh 5vw;
+}
+
+.refmairie {
+  font-family: "KaushanScript-Regular";
+  font-size: 1rem;
+  color: black;
+  padding: 0 5vw 5vh 5vw;
+}
+
+.lienmaigner {
+  font-family: "KaushanScript-Regular";
+  font-size: 1rem;
+  color: black;
+}
+
+/*  -----------------  pour les écrans moyens de 768px tablette  -------------
+ ----------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  body .page-presentation {
+    width: 700px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .page-presentationpage {
+    width: 1000px;
+    height: auto;
   }
 }
 
