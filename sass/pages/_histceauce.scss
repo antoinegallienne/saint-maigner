@@ -1,13 +1,13 @@
 
-.histoire{
+.histceauce{
 	width: 100%;
 	margin: auto;
 }
 
-.page-histoire {
+.page-histceauce {
 	display: flex;
 	flex-direction: column;
-	background:  url('../../public/img/histoire2.webp');
+	background:  url('../../public/img/histceauce.webp');
 	width: 586px;
 	height: auto;
 	margin: auto;
@@ -24,7 +24,7 @@
 .titrehistoire{
 	font-family: 'KaushanScript-Regular';
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	padding: 5vh 2vw 5vh 2vw;
 	margin: auto;
 }
@@ -46,12 +46,12 @@
 	color: black;
 	padding: 5vh 5vw 5vh 5vw;
 }
-
+.refcarte,
 .refmairie{
 	font-family: 'KaushanScript-Regular';
 	font-size: 1rem;
 	color: black;
-	padding: 0 5vw 5vh 5vw;
+	padding: 0 5vw 1vh 5vw;
 }
 .lienmaigner{
 	font-family: 'KaushanScript-Regular';

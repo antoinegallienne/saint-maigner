@@ -239,11 +239,12 @@
   padding: 5vh 5vw 5vh 5vw;
 }
 
+.refcarte,
 .refmairie {
   font-family: "KaushanScript-Regular";
   font-size: 1rem;
   color: black;
-  padding: 0 5vw 5vh 5vw;
+  padding: 0 5vw 1vh 5vw;
 }
 
 .lienmaigner {
@@ -369,13 +370,14 @@
   margin: auto;
 }
 
-.arandmaigner {
-  grid-area: ar;
-  position: relative;
-  bottom: 75vh;
-  margin: auto;
+/*
+.arandmaigner{
+	grid-area: ar;
+	position: relative;
+	bottom: 75vh;
+	margin: auto;
 }
-
+ */
 .panretmaigner {
   grid-area: pan;
   position: relative;
@@ -385,22 +387,13 @@
 
 .apremaigner img,
 .ahistmaigner img,
-.arandmaigner img,
 .panretmaigner img {
   width: 8rem;
   padding: 0.5vh 0.5vw 0.5vh 0.5vw;
 }
 
-/*
-.apremaigner,
-.ahistmaigner,
-.arandmaigner{
-	padding-left: 30vw;
-	transform: rotate(-11deg);
-}*/
 .apremaigner:hover,
 .ahistmaigner:hover,
-.arandmaigner:hover,
 .panretmaigner:hover {
   transform: scale(1.3);
   transition-duration: 600ms;
@@ -679,9 +672,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    border: red solid 2px;
-  }
   body .polaceauce {
     display: block;
     width: 50vw;
@@ -712,9 +702,6 @@ body .panretceauce img {
   }
 }
 @media screen and (min-width: 1024px) {
-  body {
-    border: blue solid 2px;
-  }
   body .polaceauce {
     display: block;
     width: 40vw;
@@ -814,15 +801,15 @@ body {
 }
 
 */
-.histoire {
+.histceauce {
   width: 100%;
   margin: auto;
 }
 
-.page-histoire {
+.page-histceauce {
   display: flex;
   flex-direction: column;
-  background: url("../../public/img/histoire2.webp");
+  background: url("../../public/img/histceauce.webp");
   width: 586px;
   height: auto;
   margin: auto;
@@ -838,7 +825,7 @@ body {
 .titrehistoire {
   font-family: "KaushanScript-Regular";
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 5vh 2vw 5vh 2vw;
   margin: auto;
 }
@@ -861,11 +848,12 @@ body {
   padding: 5vh 5vw 5vh 5vw;
 }
 
+.refcarte,
 .refmairie {
   font-family: "KaushanScript-Regular";
   font-size: 1rem;
   color: black;
-  padding: 0 5vw 5vh 5vw;
+  padding: 0 5vw 1vh 5vw;
 }
 
 .lienmaigner {
