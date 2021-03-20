@@ -14,7 +14,7 @@
   display: grid;
   grid-template-rows: 0.5fr 2fr 0.5fr 0.5fr 0.5fr;
   grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "  .  .  ag1  .   . " "  .  a1  a1  a1  . " "  .  .   a2  .   . " " b0  b1  b2  b3  . " " c1  c1  c3  c3  . ";
+  grid-template-areas: "  .  .  ag1  .   . " "  .  a1  a1  a1  . " "  .  .   a2  .   . " " b0  b1  b2  b3  . " " . . . .  . ";
   margin: auto;
   width: 90vw;
   height: 80vh;
@@ -91,7 +91,8 @@
   margin: 0;
 }
 
-.orne {
+/*
+.orne{
   grid-area: c1;
   font-size: 1rem;
   color: black;
@@ -110,7 +111,7 @@
   justify-self: end;
   padding-bottom: 5vh;
 }
-
+*/
 .pano61330 img,
 .pano63330 img {
   display: block;
@@ -118,10 +119,13 @@
   margin: auto;
 }
 
+.pano61330:hover,
+.pano63330:hover {
+  transform: scale(1.3);
+  transition-duration: 600ms;
+}
+
 @media screen and (min-width: 768px) {
-  body {
-    border: violet solid 2px;
-  }
   body .sigleag {
     grid-area: ag1;
     width: 20vw;
@@ -212,9 +216,6 @@ body .pano63330 img {
   }
 }
 @media screen and (min-width: 1024px) {
-  body {
-    border: yellow solid 2px;
-  }
   body .sigleag {
     grid-area: ag1;
     width: 20vw;
@@ -451,7 +452,7 @@ body .pano63330 img {
   display: grid;
   grid-template-rows: 1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "  pc  pc  pc pc  pc " "  ap  ap  ap ap  ap " "  pa  pa  pa pa  pa " "  ah  ah  ah ah  ah " "  ar  ar  ar  ar  ar" "  pan pan pan pan pan ";
+  grid-template-areas: "  pc  pc  pc pc  pc " "  ap  ap  ap ap  ap " "  . .  pa . . " "  . .  ah  . . " " . .  ar  . ." "  . . pan . . ";
 }
 
 .appolamaigner {
@@ -803,7 +804,7 @@ body {
   display: grid;
   grid-template-rows: 1fr 0.1fr 0.1fr 0.1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "  pc  pc  pc pc  pc " "  ap  ap  ap ap  ap " "  ah  ah  ah ah  ah " "  pa  pa  pa pa  pa ";
+  grid-template-areas: "  pc  pc  pc pc  pc " "  . .  ap . . " "  . .  ah . . " "  .  .  pa . . ";
 }
 
 .polaceauce {

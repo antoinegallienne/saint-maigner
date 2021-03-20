@@ -10,10 +10,10 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas: 	"  pc  pc  pc pc  pc "
                             "  ap  ap  ap ap  ap "
-							"  pa  pa  pa pa  pa "
-                            "  ah  ah  ah ah  ah "
-							"  ar  ar  ar  ar  ar"
-							"  pan pan pan pan pan ";
+							"  . .  pa . . "
+                            "  . .  ah  . . "
+							" . .  ar  . ."
+							"  . . pan . . ";
 }
 
 .appolamaigner{

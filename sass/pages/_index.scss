@@ -12,7 +12,7 @@
                             "  .  a1  a1  a1  . "
                             "  .  .   a2  .   . "
 							" b0  b1  b2  b3  . "
-							" c1  c1  c3  c3  . ";
+							" . . . .  . ";
 	margin: auto;
 	width: 90vw;
 	height: 80vh;
@@ -89,7 +89,7 @@
   padding: 0 1vw 0 0 ;
   margin: 0;
 }
-
+/*
 .orne{
   grid-area: c1;
   font-size: 1rem;
@@ -109,6 +109,7 @@
   justify-self: end;
   padding-bottom: 5vh;
 }
+*/
 
 .pano61330 img,
 .pano63330 img{
@@ -117,6 +118,11 @@
   margin: auto;
 }
 
+.pano61330:hover,
+.pano63330:hover{
+  transform: scale(1.3) ;
+  transition-duration: 600ms;
+}
 
 //  -----------------   Media query de 540px à 1200px  -------------*/
 // -----------------------------------------------------------------*/
@@ -125,7 +131,7 @@ body {
 
 	@include media-min(768px) {
 
-      border: violet solid 2px;
+ //     border: violet solid 2px;
 
       .sigleag {
         grid-area: ag1;
@@ -229,7 +235,7 @@ body {
   // -----------------------------------------------
 	@include media-min(1024px) {
 
-      border: yellow solid 2px;
+ //     border: yellow solid 2px;
 
       .sigleag{
         grid-area: ag1;

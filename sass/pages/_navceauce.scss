@@ -9,9 +9,9 @@
 	grid-template-rows:   1fr 0.1fr 0.1fr 0.1fr;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas: 	"  pc  pc  pc pc  pc "
-                            "  ap  ap  ap ap  ap "
-                            "  ah  ah  ah ah  ah "
-							"  pa  pa  pa pa  pa ";
+                            "  . .  ap . . "
+                            "  . .  ah . . "
+							"  .  .  pa . . ";
 
 //	margin: auto;
 }
